@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../css/main.css">
+  <title>NutriDock</title>
+</head>
+<body>
+
+    <div id="frameBar">
+
+      <div class="frameBar__actions">
+        <div class="do do_close"></div>
+        <div class="do do_reduce"></div>
+        <div class="do do_resize"></div>
+        
+      </div>
+      <div class="frameBar__infos">
+        <span><b>NutriDock.</b> - ALPHA 0.0.1</span>
+      </div>
+    </div>
+
+    <div id="page">
+
+      <h1>NutriDock.</h1>
+      <p>Inscription d'un nouveau patient</p>
+
+      <div class="form" id="newUser">
+
+        <div class="field" data-field>
+          <label>Nom</label>
+          <input type="text">
+        </div>
+  
+        <div class="field" data-field>
+          <label>Prénom</label>
+          <input type="text">
+        </div>
+  
+        <div class="field" data-field>
+          <label>Genre</label>
+          <select>
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+          </select>
+        </div>
+  
+        <div class="field" data-field>
+          <label>Email</label>
+          <input type="email">
+        </div>
+  
+        <div class="field" data-field>
+          <label>Téléphone</label>
+          <input type="tel">
+        </div>
+  
+        <div class="field" data-field>
+          <label>GSM</label>
+          <input type="tel">
+        </div>
+  
+        <div class="field" data-field>
+          <label>Adresse</label>
+          <input type="text">
+        </div>
+  
+      </div>
+
+      <button>Enregistrer</button>
+
+
+
+    </div>
+
+
+    
+
+    <!-- Import Scripts-->
+    <script>if(typeof module === 'object'){window.module = module; module = undefined;}</script>
+    <script src="./../../../renderer.js"></script>
+
+    <!-- Electron JS -->
+      <script src="./../js/jquery.js"></script>
+      <script src="./../js/config.js"></script>
+      <script src="./../js/bootstrap.js"></script>
+      <script src="./../js/router.js"></script>
+
+    <!-- Core JS -->
+    <script src="./../js/users.js"></script>
+
+
+    <script>if (window.module) module = window.module;</script>
+</body>
+</html>

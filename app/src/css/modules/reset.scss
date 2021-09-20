@@ -1,0 +1,21 @@
+html, body{
+  margin: 0 auto; 
+  font-size: 12px;
+  overflow-x: hidden;
+}
+
+#page{
+  margin: 0 20px;
+}
+
+*{
+  font-family: sans-serif;
+  // color: rgba($color: #000000, $alpha: 0.7);
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,0 +1,48 @@
+#frameBar{
+  display: flex;
+  padding: 5px;
+
+  position: absolute;
+  width: 100vw;
+  z-index: 1000;
+  background: $darkb;
+  color: $white;
+
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+
+  .frameBar__infos{
+    font-size: 10px;
+    line-height: 11.5px;
+  }
+
+  .frameBar__actions{
+    width: 100%;
+    max-width: 55px;
+    display: flex;
+    font-size: 10px;
+
+    .do{
+      -webkit-app-region: no-drag;
+      width: 100%;
+      max-width: 10px;
+      height: 10px;
+      margin: 0 2px;
+      border:1px solid rgba($color: #000000, $alpha: .5);
+      border-radius: 50%;
+
+      &.do_close{
+        border-color: #CD4C48;
+        background-color: #FA6057;
+      }
+      &.do_reduce{
+        border-color: #D4A039;
+        background-color: #F7B631;
+      }
+      &.do_resize{
+        border-color: #39A13B;
+        background-color: #29CB40;
+      }
+    }
+  }
+}
