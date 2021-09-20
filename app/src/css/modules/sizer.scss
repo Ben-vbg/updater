@@ -1,0 +1,50 @@
+:root {
+  --grid-gutter: 20px;
+}
+
+$grid-width: 100rem; // 1000px
+$gutter-vertical: 4rem; //40px
+$gutter-horizontal: 4rem; // 40px
+
+
+.o-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: calc(var(--grid-gutter) * -1);
+  margin-right: calc(var(--grid-gutter) * -1);
+  margin-left: calc(var(--grid-gutter) * -1);
+
+  &.o-grid--hCenter{
+    justify-content: center;
+  }
+  &.o-grid--vCenter{
+    align-items: center;
+  }
+}
+
+.o-grid__cell {
+  width: 100%;
+  margin-bottom: var(--grid-gutter);
+  padding-right: var(--grid-gutter);
+  padding-left: var(--grid-gutter);
+  background: red;
+}
+
+
+@media screen and (min-width: 700px) {
+  .c-12{
+    width: 100%;
+  }
+  .c-8{
+    width: calc((100% / 3)*2);
+  }
+  .c-6 {
+    width: calc(100% / 2);
+  }
+  .c-4{
+    width: calc(100% / 3);
+  }
+  .c-2{
+    width: calc(100% / 6);
+  }
+}
